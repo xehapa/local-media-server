@@ -14,9 +14,6 @@ app.get('/assets/*', async (req, res) => {
     res.send(await getAssets(req.params[0]))
 })
 
-
-
-
 app.listen(port, () => {
     console.log(`App listening on port ${port}`)
 })
